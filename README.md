@@ -6,9 +6,14 @@ For flexibility,the program also supports importing and exporting task data in d
 
 #Objectives:
 Let users create,view update and delete tasks
+
 Provide simple CLI
+
 Store tasks in a file for data persistence
-Check for valid input to prevent errors
+
+Check for valid input to prevent ERROR
+
 Generate a summary report of tasks
+
 Allow importing and exporting tasks in different formaT
 
