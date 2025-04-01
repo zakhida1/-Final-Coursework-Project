@@ -1,0 +1,51 @@
+#Algorithms and Logic
+
+1) CRUD Operations:
+
+Create:Adds  new task to the list and saves it to the file
+
+Read: Displays tasks from the saved file
+
+Update:Modifies  existing task based on its ID
+
+Delete: Removes a task from the list and file
+
+2) Input Validation:
+
+Validates user input for task details (f.e  non-empty task names,correct date formats)
+
+3) Error Handling:
+
+Catches issues like invalid input or missing files displaying helpful error messages
+
+4) Task Export asnd Import:
+
+Tasks are exported to and imported from CSV/JSON files to persist data
+
+
+##Data Structures:
+
+ArrayList:Stores tasks with properties like ID,Name and Due Date
+
+String:Used for task details and user input
+
+File: Tasks are saved to a file for persistence between sessions
+###Functions/Modules:
+
+1) Task Management:Functions like addTask(),updateTask() and deleteTask() handle task operations
+
+2) File Handling:Functions like readFromFile()and saveToFile() manage file input or output
+
+3)Input Validation:Functions like isValidTaskName() ensure correct data entry
+
+4)Reporting: Generates summaries of tasks ( like completed, pending)
+
+####Challenges:
+
+1) Error Handling:Preventing crashes from invalid inputs
+
+2) Input Validation: Handling correct formats for task details
+
+
+
+
