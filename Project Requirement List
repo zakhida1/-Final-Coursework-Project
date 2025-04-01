@@ -27,7 +27,10 @@ I added functionality to import and export tasks in formats like CSV or JSON.thi
 8)Data Structure for tasks:
 I selected appropriate data structures (such as arrays or lists) to store task data efficiently ensuring fast access and easy manipulation
 
-Documentation:
+9) Modular Code Design:
+I organized the code into modular functions to maintain clarity and reusability.This made it easier to support and improve the program over time
+
+10) Documentation:
 I provided clear documentation throughout the code explaining the purpose of each function and module.This made it easier for others to understand and maintain the code in the future
 
 
