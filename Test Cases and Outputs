@@ -1,0 +1,118 @@
+1) ADD A TASK:
+
+Input:
+User selects the option to Add a task and enters the following details:
+Task Name: "Finish Homework"
+Description: "Complete the math homework"
+Due Date: "2025-04-05"
+
+Expected Output:
+Task is successfully added to the task list
+Task list is saved to the file
+{Task "Finish Homework" added successfully}
+
+2. VIEW ALL TASKS:
+
+Input:
+User selects the option to View all tasks
+
+Expected Output:
+The program displays all tasks including the one just added
+{Task ID: 1 | Name: Finish Homework | Due Date: 2025-04-05 | Status: Pending}
+
+3.UPDATE A TASK:
+
+Input:
+User selects the option to Update a task, enters task ID 1 and updates the Due Date to "2025-04-06"
+
+Output:
+The task with ID 1 is updated with the new due date
+{Task ID 1 updated successfully: New Due Date: 2025-04-06}
+
+4. DELETE A TASK
+
+Input:
+User selects the option to Delete a task enters task ID 1
+
+Output:
+Task with ID 1 is removed from the task list
+{ Task ID 1 deleted successfully}
+
+5. INPUT VALIDATION- INVALID TASK NAME
+
+Input:
+User attempts to add a task with an empty task name
+Task Name: "" (empty)
+Description: "Complete the project"
+Due Date: "2025-04-10"
+
+Output:
+The program prompts the user to enter a valid task 
+{Task name cannot be empty. Please enter a valid task name}
+
+6. INPUT VALIDATON- INVALID DATE FORMAT
+
+Input:
+User attempts to add a task with an incorrect date format
+Task Name: "Start Project"
+Description: "Begin work on the project"
+Due Date: "2025-30-12" (incorrect format
+
+Output:
+a  program prompts the user to enter the date in the correct format
+{Invalid date format. Please enter the date in YYYY-MM-DD format}
+
+7. GENERATE TASK REPORT
+
+Input:
+User selects the option to Generate a report showing completed and pending tasks
+
+Output:
+The program generates and displays a summary of the tasks
+{Total Tasks: 2
+Completed Tasks: 0
+Pending Tasks: 2 }
+
+8.EXPORT TASKS
+
+Input:
+User selects the option to Export tasks to a CSV file
+
+Output:
+A CSV file is created with the task details
+Example CSV output:
+{ ID, Name, Description, Due Date, Status
+1, Finish Homework, Complete the math homework, 2025-04-06, Pending
+2, Start Project, Begin work on the project, 2025-04-10, Pending }
+
+9.IMPORT TASKS
+
+Input:
+User selects the option to Import tasks from a CSV file containing task data
+
+Output:
+The tasks from the file are successfully imported and displayed in the task list
+{ Tasks imported successfully}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
