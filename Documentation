@@ -3,11 +3,8 @@
 1) CRUD Operations:
 
 Create:Adds  new task to the list and saves it to the file
-
 Read: Displays tasks from the saved file
-
 Update:Modifies  existing task based on its ID
-
 Delete: Removes a task from the list and file
 
 2) Input Validation:
