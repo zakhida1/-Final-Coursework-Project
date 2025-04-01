@@ -1,4 +1,4 @@
-#Algorithms and Logic
+#ALGORITHMS AND LOGIC:
 
 1) CRUD Operations:
 
@@ -23,14 +23,16 @@ Catches issues like invalid input or missing files displaying helpful error mess
 Tasks are exported to and imported from CSV/JSON files to persist data
 
 
-##Data Structures:
+##DATA STRUCTURES:
 
 ArrayList:Stores tasks with properties like ID,Name and Due Date
 
 String:Used for task details and user input
 
 File: Tasks are saved to a file for persistence between sessions
-###Functions/Modules:
+
+
+###FUNCTIONS AND MODULES:
 
 1) Task Management:Functions like addTask(),updateTask() and deleteTask() handle task operations
 
@@ -40,7 +42,8 @@ File: Tasks are saved to a file for persistence between sessions
 
 4)Reporting: Generates summaries of tasks ( like completed, pending)
 
-####Challenges:
+
+####CHALLENGES:
 
 1) Error Handling:Preventing crashes from invalid inputs
 
