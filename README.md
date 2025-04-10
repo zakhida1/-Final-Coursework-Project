@@ -25,3 +25,8 @@ IDE: IntelliJ IDEA / Eclipse / NetBeans
 Storage:Local text/CSV files
 Modules:TaskManager, FileHandler,CLI, Validator,ReportGenerator
 
+
+##PRESENTATION
+
+https://docs.google.com/presentation/d/1N43Zexmz1tifRMbKbVAmMu9kwQr-m5qYN-wX_4l5fRE/edit?usp=sharing
+
