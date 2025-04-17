@@ -1,1 +1,113 @@
+import java.util.*;
+
+public class Main {
+    static List<Task> tasks = new ArrayList<>();
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        while (true) {
+            System.out.println("\nTask List Organizer");
+            System.out.println("1. Add Task");
+            System.out.println("2. View Tasks");
+            System.out.println("3. Update Task");
+            System.out.println("4. Delete Task");
+            System.out.println("5. Exit");
+            System.out.print("Choose an option: ");
+
+            String choice = scanner.nextLine();
+
+            switch (choice) {
+                case "1":
+                    addTask();
+                    break;
+                case "2":
+                    viewTasks();
+                    break;
+                case "3":
+                    updateTask();
+                    break;
+                case "4":
+                    deleteTask();
+                    break;
+                case "5":
+                    System.out.println("Exiting...");
+                    return;
+                default:
+                    System.out.println("Invalid option.");
+            }
+        }
+    }
+
+    static void addTask() {
+        System.out.print("Enter task title: ");
+        String title = scanner.nextLine();
+        System.out.print("Enter task description: ");
+        String description = scanner.nextLine();
+        tasks.add(new Task(title, description));
+        System.out.println("Task added.");
+    }
+
+    static void viewTasks() {
+        if (tasks.isEmpty()) {
+            System.out.println("No tasks available.");
+            return;
+        }
+        for (int i = 0; i < tasks.size(); i++) {
+            System.out.println((i + 1) + ". " + tasks.get(i));
+        }
+    }
+
+    static void updateTask() {
+        viewTasks();
+        if (tasks.isEmpty()) return;
+        System.out.print("Enter task number to update: ");
+        int index = Integer.parseInt(scanner.nextLine()) - 1;
+        if (index < 0 || index >= tasks.size()) {
+            System.out.println("Invalid task number.");
+            return;
+        }
+        System.out.print("New title: ");
+        String title = scanner.nextLine();
+        System.out.print("New description: ");
+        String description = scanner.nextLine();
+        tasks.get(index).setTitle(title);
+        tasks.get(index).setDescription(description);
+        System.out.println("Task updated.");
+    }
+
+    static void deleteTask() {
+        viewTasks();
+        if (tasks.isEmpty()) return;
+        System.out.print("Enter task number to delete: ");
+        int index = Integer.parseInt(scanner.nextLine()) - 1;
+        if (index < 0 || index >= tasks.size()) {
+            System.out.println("Invalid task number.");
+            return;
+        }
+        tasks.remove(index);
+        System.out.println("Task deleted.");
+    }
+}
+
+class Task {
+    private String title;
+    private String description;
+
+    public Task(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String toString() {
+        return "Title: " + title + " | Description: " + description;
+    }
+}
 
