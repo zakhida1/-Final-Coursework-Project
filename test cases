@@ -1,0 +1,69 @@
+Test Case 1: Add Task with Valid Data
+Input:
+1
+Finish assignment
+Complete Java exercises
+2025-05-15
+High
+Output:
+Task added.
+
+
+Test Case 2: View All Tasks
+Input:
+2
+Output:
+1. Title: Finish assignment | Description: Complete Java exercises | Due: 2025-05-15 | Priority: High
+
+
+Test Case 3: Update Task
+Input:
+3
+1
+Final assignment
+Finalize code and documentation
+2025-05-16
+Medium
+Output:
+Task updated.
+
+
+Test Case 4: Delete Task
+Input:
+4
+1
+Output:
+Task deleted.
+
+
+Test Case 5: Search Tasks by Keyword
+Input:
+5
+presentation
+Output:
+1. Title: Prepare presentation | Description: Slide deck for final review | Due: 2025-05-17 | Priority: High
+
+
+ Test Case 6: Filter Tasks by Priority
+Input:
+6
+High
+Output:
+1. Title: Prepare | Description: Slide deck for final review | Due: 2025-05-17 | Priority: High
+
+Test Case 7: Generate Report
+Assume 3 tasks added: 2 High, 1 Medium
+Input:
+7
+Output:
+Total tasks: 3
+High: 2
+Medium: 1
+
+
+Test Case 8: Exit Application
+Input:
+8
+Output:
+Exiting...
+
