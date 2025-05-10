@@ -1,39 +1,36 @@
 import java.util.*;
 
-public class Main {
+public class TaskOrganizerApp {
     static List<Task> tasks = new ArrayList<>();
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         while (true) {
-            System.out.println("\nTask List Organizer");
+            System.out.println("\nTask Organizer List");
             System.out.println("1. Add Task");
             System.out.println("2. View Tasks");
             System.out.println("3. Update Task");
             System.out.println("4. Delete Task");
-            System.out.println("5. Exit");
+            System.out.println("5. Search Tasks");
+            System.out.println("6. Filter Tasks");
+            System.out.println("7. Generate Report");
+            System.out.println("8. Exit");
             System.out.print("Choose an option: ");
 
             String choice = scanner.nextLine();
 
             switch (choice) {
-                case "1":
-                    addTask();
-                    break;
-                case "2":
-                    viewTasks();
-                    break;
-                case "3":
-                    updateTask();
-                    break;
-                case "4":
-                    deleteTask();
-                    break;
-                case "5":
-                    System.out.println("Exiting...");
+                case "1": addTask(); break;
+                case "2": viewTasks(); break;
+                case "3": updateTask(); break;
+                case "4": deleteTask(); break;
+                case "5": searchTasks(); break;
+                case "6": filterTasks(); break;
+                case "7": generateReport(); break;
+                case "8": 
+                    System.out.println("Exiting..."); 
                     return;
-                default:
-                    System.out.println("Invalid option.");
+                default: System.out.println("Invalid option.");
             }
         }
     }
@@ -43,7 +40,12 @@ public class Main {
         String title = scanner.nextLine();
         System.out.print("Enter task description: ");
         String description = scanner.nextLine();
-        tasks.add(new Task(title, description));
+        System.out.print("Enter due date (yyyy-mm-dd): ");
+        String dueDate = scanner.nextLine();
+        System.out.print("Enter priority (Low, Medium, High): ");
+        String priority = scanner.nextLine();
+
+        tasks.add(new Task(title, description, dueDate, priority));
         System.out.println("Task added.");
     }
 
@@ -70,8 +72,16 @@ public class Main {
         String title = scanner.nextLine();
         System.out.print("New description: ");
         String description = scanner.nextLine();
-        tasks.get(index).setTitle(title);
-        tasks.get(index).setDescription(description);
+        System.out.print("New due date: ");
+        String dueDate = scanner.nextLine();
+        System.out.print("New priority: ");
+        String priority = scanner.nextLine();
+
+        Task t = tasks.get(index);
+        t.setTitle(title);
+        t.setDescription(description);
+        t.setDueDate(dueDate);
+        t.setPriority(priority);
         System.out.println("Task updated.");
     }
 
@@ -87,27 +97,76 @@ public class Main {
         tasks.remove(index);
         System.out.println("Task deleted.");
     }
+
+    static void searchTasks() {
+        System.out.print("Enter keyword to search: ");
+        String keyword = scanner.nextLine().toLowerCase();
+        boolean found = false;
+        for (int i = 0; i < tasks.size(); i++) {
+            Task t = tasks.get(i);
+            if (t.getTitle().toLowerCase().contains(keyword) || t.getDescription().toLowerCase().contains(keyword)) {
+                System.out.println((i + 1) + ". " + t);
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("No matching tasks found.");
+        }
+    }
+
+    static void filterTasks() {
+        System.out.print("Enter priority to filter by (Low, Medium, High): ");
+        String filter = scanner.nextLine();
+        boolean found = false;
+        for (int i = 0; i < tasks.size(); i++) {
+            Task t = tasks.get(i);
+            if (t.getPriority().equalsIgnoreCase(filter)) {
+                System.out.println((i + 1) + ". " + t);
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("No tasks match the filter.");
+        }
+    }
+
+    static void generateReport() {
+        int total = tasks.size();
+        System.out.println("Total tasks: " + total);
+        Map<String, Integer> countMap = new HashMap<>();
+        for (Task t : tasks) {
+            countMap.put(t.getPriority(), countMap.getOrDefault(t.getPriority(), 0) + 1);
+        }
+        for (Map.Entry<String, Integer> entry : countMap.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
 }
 
 class Task {
     private String title;
     private String description;
+    private String dueDate;
+    private String priority;
 
-    public Task(String title, String description) {
+    public Task(String title, String description, String dueDate, String priority) {
         this.title = title;
         this.description = description;
+        this.dueDate = dueDate;
+        this.priority = priority;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    public String getTitle() { return title; }
+    public String getDescription() { return description; }
+    public String getDueDate() { return dueDate; }
+    public String getPriority() { return priority; }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    public void setTitle(String title) { this.title = title; }
+    public void setDescription(String description) { this.description = description; }
+    public void setDueDate(String dueDate) { this.dueDate = dueDate; }
+    public void setPriority(String priority) { this.priority = priority; }
 
     public String toString() {
-        return "Title: " + title + " | Description: " + description;
+        return "Title: " + title + " | Description: " + description + " | Due: " + dueDate + " | Priority: " + priority;
     }
 }
-
