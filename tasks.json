@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Submit Assignment",
+    "description": "Finish and submit Java project",
+    "dueDate": "2025-05-15",
+    "priority": "High"
+  },
+  {
+    "title": "Grocery Shopping",
+    "description": "Buy milk, eggs, and bread",
+    "dueDate": "2025-05-12",
+    "priority": "Medium"
+  },
+  {
+    "title": "Team Meeting",
+    "description": "Discuss project milestones",
+    "dueDate": "2025-05-18",
+    "priority": "High"
+  },
+  {
+    "title": "Read Book",
+    "description": "Read 50 pages of a novel",
+    "dueDate": "2025-05-11",
+    "priority": "Low"
+  },
+  {
+    "title": "Gym Workout",
+    "description": "Cardio and strength training",
+    "dueDate": "2025-05-10",
+    "priority": "Medium"
+  }
+]
