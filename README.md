@@ -51,11 +51,11 @@ This project demonstrates the fundamental principles of software development, in
 - Exit with Logging: Exit the application safely and log the session's actions
 
 ## Running the Application:
-1)Download or clone the project repository
-2)Open a terminal/command prompt and navigate to the project folder
-3)Compile the program using:
+1. Download or clone the project repository
+2. Open a terminal/command prompt and navigate to the project folder
+3. Compile the program using:
 javac TaskOrganizer.java
-4)Run the application with:
+4. Run the application with:
 java TaskOrganizer
 
 ## Functions and Methods
