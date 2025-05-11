@@ -1,32 +1,122 @@
 [
   {
-    "title": "Submit Assignment",
-    "description": "Finish and submit Java project",
+    "title": "Finish Java project",
+    "description": "Complete coursework",
     "dueDate": "2025-05-15",
-    "priority": "High"
+    "priority": "High",
+    "status": "Pending"
   },
+ 
   {
-    "title": "Grocery Shopping",
-    "description": "Buy milk, eggs, and bread",
+    "title": "Buy groceries",
+    "description": "Milk and eggs",
     "dueDate": "2025-05-12",
-    "priority": "Medium"
+    "priority": "Medium",
+    "status": "Completed"
   },
+ 
   {
-    "title": "Team Meeting",
-    "description": "Discuss project milestones",
+    "title": "Call doctor",
+    "description": "Annual check-up appointment",
     "dueDate": "2025-05-18",
-    "priority": "High"
+    "priority": "Low",
+    "status": "Pending"
   },
+
   {
-    "title": "Read Book",
-    "description": "Read 50 pages of a novel",
+    "title": "Plan trip",
+    "description": "Book flights and hotel",
+    "dueDate": "2025-06-01",
+    "priority": "High",
+    "status": "Completed"
+  },
+
+  {
+    "title": "Study for exam",
+    "description": "Revise all Java topics",
+    "dueDate": "2025-05-14",
+    "priority": "High",
+    "status": "Pending"
+  },
+
+  {
+    "title": "Clean room",
+    "description": "Tidy desk and closet",
+    "dueDate": "2025-05-13",
+    "priority": "Low",
+    "status": "Completed"
+  },
+
+  {
+    "title": "Send emails",
+    "description": "Reply to pending messages",
     "dueDate": "2025-05-11",
-    "priority": "Low"
+    "priority": "Medium",
+    "status": "Pending"
   },
+
   {
-    "title": "Gym Workout",
-    "description": "Cardio and strength training",
+    "title": "Pay electricity bill",
+    "description": "Due this week",
     "dueDate": "2025-05-10",
-    "priority": "Medium"
+    "priority": "High",
+    "status": "Completed"
+  },
+ 
+  {
+    "title": "Team meeting",
+    "description": "Discuss project updates",
+    "dueDate": "2025-05-16",
+    "priority": "Medium",
+    "status": "Pending"
+  },
+ 
+  {
+    "title": "Read book",
+    "description": "Finish 3 chapters",
+    "dueDate": "2025-05-20",
+    "priority": "Low",
+    "status": "Pending"
+  },
+ 
+  {
+    "title": "Backup files",
+    "description": "Upload to Google Drive",
+    "dueDate": "2025-05-09",
+    "priority": "High",
+    "status": "Completed"
+  },
+
+  {
+    "title": "Exercise",
+    "description": "30-minute workout",
+    "dueDate": "2025-05-12",
+    "priority": "Medium",
+    "status": "Completed"
+  },
+
+  {
+    "title": "Wash car",
+    "description": "Clean inside and outside",
+    "dueDate": "2025-05-19",
+    "priority": "Low",
+    "status": "Pending"
+  },
+ 
+  {
+    "title": "Update resume",
+    "description": "Add new experiences",
+    "dueDate": "2025-05-22",
+    "priority": "Medium",
+    "status": "Pending"
+  },
+
+  {
+    "title": "Research internship",
+    "description": "Apply online",
+    "dueDate": "2025-05-25",
+    "priority": "High",
+    "status": "Pending"
   }
 ]
+
