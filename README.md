@@ -168,7 +168,7 @@ Activity Log:
 - Created task...
 - Deleted task...
 
-✅ Test Case 11: Exit Application
+Test Case 11: Exit Application
 Input:
 0
 Output:
