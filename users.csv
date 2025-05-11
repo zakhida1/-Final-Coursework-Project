@@ -1,6 +1,29 @@
-Title,Description,DueDate,Priority
-Submit Assignment,Finish and submit Java project,2025-05-15,High
-Grocery Shopping,Buy milk, eggs, and bread,2025-05-12,Medium
-Team Meeting,Discuss project milestones,2025-05-18,High
-Read Book,Read 50 pages of a novel,2025-05-11,Low
-Gym Workout,Cardio and strength training,2025-05-10,Medium
+- Finish Java project,Complete coursework,2025-05-15,High,Pending
+
+- Buy groceries,Milk and eggs,2025-05-12,Medium,Completed
+
+- Call doctor,Annual check-up appointment,2025-05-18,Low,Pending
+
+- Plan trip,Book flights and hotel,2025-06-01,High,Completed
+
+- Study for exam,Revise all Java topics,2025-05-14,High,Pending
+
+- Clean room,Tidy desk and closet,2025-05-13,Low,Completed
+
+- Send emails,Reply to pending messages,2025-05-11,Medium,Pending
+
+- Pay electricity bill,Due this week,2025-05-10,High,Completed
+
+- Team meeting,Discuss project updates,2025-05-16,Medium,Pending
+
+- Read book,Finish 3 chapters,2025-05-20,Low,Pending
+
+- Backup files,Upload to Google Drive,2025-05-09,High,Completed
+
+- Exercise,30-minute workout,2025-05-12,Medium,Completed
+
+- Wash car,Clean inside and outside,2025-05-19,Low,Pending
+
+- Update resume,Add new experiences,2025-05-22,Medium,Pending
+
+- Research internship,Apply online,2025-05-25,High,Pending
