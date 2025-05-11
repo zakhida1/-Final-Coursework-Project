@@ -11,23 +11,23 @@ This project demonstrates the fundamental principles of software development, in
 
 
 ## Project Goals:
-Implement CRUD functionality using Java
+- Implement CRUD functionality using Java
 
-Practice working with files (read/write)
+- Practice working with files (read/write)
 
-Apply Object-Oriented Programming (OOP) principles
+- Apply Object-Oriented Programming (OOP) principles
 
-Validate user inputs ( non-empty fields,proper email format)
+- Validate user inputs ( non-empty fields,proper email format)
 
-Handle errors gracefully (invalid inputs, file errors)
+- Handle errors gracefully (invalid inputs, file errors)
 
-Generate summary reports (e.g., total users)
+- Generate summary reports (e.g., total users)
 
-Support data import/export to/from files
+- Support data import/export to/from files
 
-Write clean,modular and well-structured code
+- Write clean,modular and well-structured code
 
-Document the system clearly and professionally
+- Document the system clearly and professionally
 
 ## Features:
 Create Task:Add a new task with title,description, due date, priority and status
