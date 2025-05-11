@@ -30,16 +30,25 @@ This project demonstrates the fundamental principles of software development, in
 - Document the system clearly and professionally
 
 ## Features:
-Create Task:Add a new task with title,description, due date, priority and status
-View Tasks:Display a list of all saved tasks with their details
-Update Task:Modify task attributes by selecting a task ID
-Delete Task: Remove a task permanently using its ID
-Search Task: Find tasks by keywords in the title or description
-Filter Tasks:Filter tasks by status (e.g., "Pending", "Completed") or by due date
-Generate Report: Generate a summary of tasks and view recent activity logs
-Import/Export CSV: Load tasks from or save tasks to a .csv file
-Input Validation: Validate input formats for dates and restrict empty/invalid fields
-Exit with Logging: Exit the application safely and log the session's actions
+- Create Task:Add a new task with title,description, due date, priority and status
+
+-View Tasks:Display a list of all saved tasks with their details
+ 
+- Update Task:Modify task attributes by selecting a task ID
+
+- Delete Task: Remove a task permanently using its ID
+
+- Search Task: Find tasks by keywords in the title or description
+
+- Filter Tasks:Filter tasks by status (e.g., "Pending", "Completed") or by due date
+
+- Generate Report: Generate a summary of tasks and view recent activity logs
+
+- Import/Export CSV: Load tasks from or save tasks to a .csv file
+
+- Input Validation: Validate input formats for dates and restrict empty/invalid fields
+
+- Exit with Logging: Exit the application safely and log the session's actions
 
 ## Running the Application:
 1)Download or clone the project repository
