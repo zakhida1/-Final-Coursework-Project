@@ -4,7 +4,7 @@
 ## Project Title:
 Java Console-Based User Management System (CRUD Application)
 
-##Overview:
+## Overview:
 This project is a console-based application written in Java that performs basic CRUD operations like Create,Read,Update and Delete for managing user data.Users can interact with the system through a clear and simple command-line menu.All user data is saved in a text file, ensuring persistence across sessions
 The application includes input validation (e.g., checking email format), basic error handling, and a report generation feature to summarize stored data. It also supports data import/export,allowing for backups or integration with other systems
 This project demonstrates the fundamental principles of software development, including modular design, file handling, user input management and data validation.
@@ -12,16 +12,24 @@ This project demonstrates the fundamental principles of software development, in
 
 ## Project Goals:
 Implement CRUD functionality using Java
+
 Practice working with files (read/write)
+
 Apply Object-Oriented Programming (OOP) principles
+
 Validate user inputs ( non-empty fields,proper email format)
+
 Handle errors gracefully (invalid inputs, file errors)
+
 Generate summary reports (e.g., total users)
+
 Support data import/export to/from files
+
 Write clean,modular and well-structured code
+
 Document the system clearly and professionally
 
-##Features:
+## Features:
 Create Task:Add a new task with title,description, due date, priority and status
 View Tasks:Display a list of all saved tasks with their details
 Update Task:Modify task attributes by selecting a task ID
@@ -33,7 +41,7 @@ Import/Export CSV: Load tasks from or save tasks to a .csv file
 Input Validation: Validate input formats for dates and restrict empty/invalid fields
 Exit with Logging: Exit the application safely and log the session's actions
 
-##Running the Application:
+## Running the Application:
 1)Download or clone the project repository
 2)Open a terminal/command prompt and navigate to the project folder
 3)Compile the program using:
@@ -41,7 +49,7 @@ javac TaskOrganizer.java
 4)Run the application with:
 java TaskOrganizer
 
-##Functions and Methods
+## Functions and Methods
 1. createTask()
 Prompts the user to enter task details (title, description, due date, priority, status)
 Validates the due date format (YYYY-MM-DD) and ensures fields are not empty
@@ -64,14 +72,14 @@ Ensures date, priority and status values are valid before accepting input
 10. exitApp()
 Closes the app, logs the exit action and saves task data if needed
 
-##File Format
+## File Format
 All tasks are stored in a file named tasks.csv with the following format:
 id,title,description,dueDate,priority,status
 Example:
 1,Finish Java project,Complete final coursework,2025-05-15,High,Pending
 2,Buy groceries,Milk, eggs, bread,2025-05-10,Medium,Completed
 
-### Test Cases
+## Test Cases
 Test Case 1:Create Task with Valid Data
 Input:
 1  
@@ -168,21 +176,8 @@ Exiting Task Organizer List...
 All changes saved.
 Activity logged. Goodbye!
 
- ###Presentation:
 
-
-
-
-
-
-
-
-
-
-
-
-
-##IMPLEMENTATION DETAILS:
+## IMPLEMENTATION DETAILS:
 
 Language: Java
 IDE: IntelliJ IDEA 
@@ -190,6 +185,6 @@ Storage:Local text/CSV files
 Modules:TaskManager, FileHandler,CLI, Validator
 
 
-##PRESENTATION
+## PRESENTATION
 
 https://www.canva.com/design/DAGnCzEkCb0/94HWiZ52MPY4_gPwN5xEgw/edit?utm_content=DAGnCzEkCb0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
