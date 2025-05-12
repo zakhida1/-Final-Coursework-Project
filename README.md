@@ -82,7 +82,7 @@ Ensures date, priority and status values are valid before accepting input
 Closes the app, logs the exit action and saves task data if needed
 
 ## File Format
-All tasks are stored in a file named tasks.csv with the following format:
+All tasks are stored in a file named users.csv with the following format:
 id,title,description,dueDate,priority,status
 Example:
 1,Finish Java project,Complete final coursework,2025-05-15,High,Pending
